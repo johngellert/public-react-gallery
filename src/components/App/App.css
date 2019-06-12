@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 70px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* set gallery-container style, 
+which holds the photo-container */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 40px 200px;
+}
+
+/* set photo-container style,
+which holds, title, image or description, like button, and likes count */
+.photo-container {
+  height: 200px;
+  width: 150px;
+  display: inline-block;
+  margin: 20px;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.photo-title {
+  margin-top: 5px;
+}
+
+/* set image class style */
+.image {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+/* set image-description style */
+.image-description {
+  border: 1px dashed black;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: .70em;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 2px;
+}
+
+/* set like-button style, child of photo-container */
+.like-button {
+  position: relative;
+  top: 10px;
+  font-size: 16px;
+  height: 24px;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* set photo-likes style, child of photo-container
+.photo-likes {
+  position: relative;
+  top: 10px;
+  display: inline;
+  margin-left: 5px;
+} */
+
+/* set like-button on hover style, child of photo-container */
+.like-button:hover {
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
